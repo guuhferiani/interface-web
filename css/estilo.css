@@ -155,7 +155,6 @@ span {
 
 #header {
   display: flex;
-  flex-wrap: row wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -289,10 +288,12 @@ span {
   min-height: 520px;
 }
 
+
 #carouselHero .carousel-item img,
 #carouselHero .carousel-item .ratio {
   height: 100%;
 }
+
 #carouselHero .carousel-item img {
   object-fit: cover;
 }
@@ -303,7 +304,7 @@ span {
   position: absolute;
   inset: 0;
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--overlay)); */
-  
+
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
   pointer-events: none;
 }
@@ -320,6 +321,7 @@ span {
   text-align: center;
   padding: 2rem;
 }
+
 #carouselHero h1,
 #carouselHero h2,
 #carouselHero p {
@@ -328,7 +330,7 @@ span {
 }
 
 .carousel-caption p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 
@@ -465,12 +467,38 @@ span {
   gap: 4rem;
 }
 
+/* =================
+ */
+
+.projeto-card4 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+
 .card-cover {
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 0.5rem;
 }
+
+
+/* Define a altura da área da galeria */
+.projeto-card4 .carousel-inner {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.projeto-card4 img {
+  object-fit: cover;
+  height: 100%;
+}
+
 
 .card-body {
   display: flex;
@@ -480,6 +508,8 @@ span {
   gap: 1rem;
   margin-top: 15px;
 }
+
+
 
 .card-title {
   /* H3 */
@@ -497,7 +527,7 @@ span {
 
 .card-lista {
   /* UL */
-  /* margin-left: 1.2rem; */
+  margin-left: -30px;
   font-family: var(--fonte-menu);
 }
 
@@ -826,6 +856,7 @@ footer i {
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
+
   /* Até 768px */
   #home {
     padding-top: 6rem;
@@ -834,6 +865,7 @@ footer i {
   .contato-grid {
     grid-template-columns: 1fr;
   }
+
   .contato-formulario,
   .contato-mapa iframe {
     width: 90%;
@@ -845,6 +877,7 @@ footer i {
 }
 
 @media (min-width: 768px) {
+
   /* A partir de 768px ate o infinito */
   #header {
     padding: 1rem 6rem;
@@ -887,6 +920,7 @@ footer i {
   .sobre-content2 {
     align-items: stretch;
   }
+
   .contato {
     padding: 6rem;
   }
@@ -900,19 +934,26 @@ footer i {
 
 /* 992 PX */
 @media (min-width: 992px) {
-  .projeto-card {
+  .projeto-card,
+  .projeto-card4 {
     flex-direction: row;
+  }
+
+
+  .projeto-card4 .carousel {
+    width: 55%;
   }
 
   .card-cover {
     width: 55%;
   }
 
-  .projeto-card.card-reverse {
+  .card-reverse {
     flex-direction: row-reverse;
     /* Espelho */
     /* justify-content: space-between; */
   }
+
 
   .sobre {
     gap: 5rem;

@@ -7,7 +7,7 @@
     <title>Gustavo Feriani - Portfolio</title>
 
     <!-- favicon -->
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -111,15 +111,13 @@
     <main id="home">
 
 
-        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel"
-            aria-label="Carrossel com imagens">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel com imagens">
             <div class="carousel-inner">
-
 
                 <!-- Slide 1 - Imagem -->
                 <div class="carousel-item active position-relative">
-                    <img src="img/projetos/pc/pc4.jpg"
-                        class="d-block w-100" alt="Equipe trabalhando em projeto digital" />
+                    <img src="img/projetos/pc/pc4.jpg" class="d-block w-100"
+                        alt="Equipe trabalhando em projeto digital" />
                     <div class="carousel-caption">
                         <h1 class="display-1 fw-bold">Pc Gamer</h1>
                         <p class="mb-3 text-center">Review do meu Setup Gamer</p>
@@ -133,26 +131,24 @@
 
                 <!-- Slide 2 - Imagem -->
                 <div class="carousel-item position-relative">
-                    <img src="img/slide1.jpg"
-                        class="d-block w-100" alt="Protótipos de interface em monitores" />
+                    <img src="img/slide1.jpg" class="d-block w-100" alt="Protótipos de interface em monitores" />
                     <div class="carousel-caption">
                         <h2 class="fw-bold">Projetos Recentes</h2>
                         <p class="mb-3 text-center">Sites responsivos para todos os dispositivos.</p>
                         <!-- <a class="btn btn-outline-light btn-cta" href="#cases">Ver cases</a> -->
                     </div>
                 </div>
-                
+
                 <!-- Slide 3 - Imagem -->
                 <div class="carousel-item position-relative">
-                    <img src="img/slide2.jpg"
-                        class="d-block w-100" alt="Protótipos de interface em monitores" />
+                    <img src="img/slide2.jpg" class="d-block w-100" alt="Protótipos de interface em monitores" />
                     <div class="carousel-caption">
                         <h2 class="fw-bold">Projetos Recentes</h2>
                         <p class="mb-3 text-center">Sites responsivos para todos os dispositivos.</p>
                         <!-- <a class="btn btn-outline-light btn-cta" href="#cases">Ver cases</a> -->
                     </div>
                 </div>
-                
+
                 <!-- Slide - Vídeo do YouTube (responsivo) -->
                 <!-- <div class="carousel-item position-relative">
                     <div class="ratio ratio-16x9">
@@ -188,8 +184,7 @@
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1"
                     aria-label="Slide 2 (vídeo)"></button>
-                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
         </div>
 
@@ -239,12 +234,13 @@
 
             </ul> <!-- Fim menu-social -->
 
-            <a href="https://www.youtube.com/" target="_blank">
-                <button class="btn btn-primario">
-                    <span>Ver Projetos</span>
-                    <i class="bi bi-arrow-down-right"></i>
-                </button>
-            </a>
+            <div class="card-button">
+                <a class="btn btn-primario" href="https://store.steampowered.com/?l=portuguese" target="_blank"
+                    rel="noopener">
+                    <span>Prévia</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
 
         </div> <!-- Fim main-content -->
 
@@ -303,15 +299,11 @@
                     </ul>
 
                     <div class="card-button">
-                        <button class="btn btn-primario">
-                            <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
-
-                                <span> Prévia </span>
-                                <i class="bi bi-arrow-up-right"></i>
-
-                            </a>
-                        </button>
-
+                        <a class="btn btn-primario" href="https://store.steampowered.com/?l=portuguese" target="_blank"
+                            rel="noopener">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
                     </div>
 
                 </div> <!-- Fim Card Body -->
@@ -348,15 +340,10 @@
                     </ul>
 
                     <div class="card-button">
-                        <button class="btn btn-primario">
-                            <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
-
-                                <span> Prévia </span>
-                                <i class="bi bi-arrow-up-right"></i>
-
-                            </a>
-                        </button>
-
+                        <a href="https://store.steampowered.com/?l=portuguese" target="_blank" class="btn btn-primario">
+                            <span> Prévia </span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
                     </div>
 
                 </div> <!-- Fim Card Body -->
@@ -408,6 +395,136 @@
 
 
 
+            <!-- Projeto / Card 4 -->
+            <article class="projeto-card4 card-reverse">
+
+                <div id="carouselGaleria1" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/slide1.jpg" class="d-block w-100" alt="Produto 1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/slide3.jpg" class="d-block w-100" alt="Produto 3">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/slide1.jpg" class="d-block w-100" alt="Produto 3">
+                        </div>
+                    </div>
+
+                    <!-- Controles laterais -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+
+
+                <div class="card-body">
+
+                    <h3 class="card-title"> Portfolio Pessoal </h3>
+                    <p class="card-description"> A história por trás do meu Portfolio. </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            <i class="bi bi-playstation"></i>
+                            Estrutura do Layout
+                        </li>
+
+                        <li class="card-item">
+                            <i class="bi bi-nintendo-switch"></i>
+                            Web Responsive
+                        </li>
+
+                        <li class="card-item">
+                            <i class="bi bi-steam"></i>
+                            Tema Light and Dark
+                        </li>
+                    </ul>
+
+                </div> <!-- Fim Card Body -->
+
+
+
+            </article>
+
+
+            <!-- Projeto / Card 5 -->
+            <article class="projeto-card4">
+
+                <div id="carouselGaleria2" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/slide1.jpg" class="d-block w-100" alt="Produto 1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/slide3.jpg" class="d-block w-100" alt="Produto 3">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/slide1.jpg" class="d-block w-100" alt="Produto 3">
+                        </div>
+                    </div>
+
+                    <!-- Controles laterais -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+
+
+                <div class="card-body">
+
+                    <h3 class="card-title"> Portfolio Pessoal </h3>
+                    <p class="card-description"> A história por trás do meu Portfolio. </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            <i class="bi bi-playstation"></i>
+                            Estrutura do Layout
+                        </li>
+
+                        <li class="card-item">
+                            <i class="bi bi-nintendo-switch"></i>
+                            Web Responsive
+                        </li>
+
+                        <li class="card-item">
+                            <i class="bi bi-steam"></i>
+                            Tema Light and Dark
+                        </li>
+                    </ul>
+
+                </div> <!-- Fim Card Body -->
+
+
+
+            </article>
+
+
+
+
+
+
         </div>
 
     </section>
@@ -436,15 +553,12 @@
                 </div>
 
                 <div class="description-button">
-                    <a href="#" target="_blank">
-
-                        <button class="btn btn-primario">
-                            <span> Conecte-se Comigo </span>
-                            <i class="bi bi-arrow-up-right"> </i>
-                        </button>
-
+                    <a class="btn btn-primario" href="#" target="_blank" rel="noopener" aria-label="Conecte-se comigo (abre em nova aba)">
+                        <span>Conecte-se Comigo</span>
+                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                     </a>
                 </div>
+
 
             </div> <!-- Fim Descricao -->
 
