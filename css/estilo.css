@@ -31,7 +31,7 @@ League Spartan:
   --cor-link: #f0f0f0;
   --cor-hover: #e9e9e9;
 
-  --cor-borda: #28292e;
+  --cor-borda: #28292e80;
 
   --icone-menu-mobile: #e9e9e9;
 
@@ -56,7 +56,7 @@ League Spartan:
   --cor-link: #8f8f8f;
   --cor-hover: #0b0b0f;
 
-  --cor-borda: #9a9a9c;
+  --cor-borda: #9a9a9c80;
 
   --icone-menu-mobile: #0b0b0f;
 
@@ -167,13 +167,16 @@ span {
 
 .menu-desktop {
   display: none;
-  margin-left: -2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   display: flex;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
+    margin-bottom: 0;
 }
 
 .menu-texto {
@@ -289,7 +292,6 @@ span {
   min-height: 400px;
 }
 
-
 #carouselHero .carousel-item img,
 #carouselHero .carousel-item .ratio {
   height: 100%;
@@ -334,7 +336,6 @@ span {
   font-size: 1.5rem;
 }
 
-
 /* Botão CTA */
 
 /* .btn-cta {
@@ -342,7 +343,6 @@ span {
   padding: 0.8rem 1.4rem;
   font-weight: 600;
 } */
-
 
 /* Flexbox */
 #home {
@@ -382,8 +382,6 @@ span {
   width: fit-content;
   /* ajuste automaticamente ao seu conteúdo */
 }
-
-
 
 .btn-primario {
   border: 1px solid var(--cor-titulo);
@@ -489,14 +487,12 @@ span {
   transition: transform 0.3s ease, box-shadow 0.3s;
 }
 
-
 .card-cover {
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 0.5rem;
 }
-
 
 /* alternativa com aspect-ratio (quadrado) */
 .projeto-card4 .carousel-item {
@@ -508,7 +504,6 @@ span {
   height: 100%;
   object-fit: cover;
 }
-
 
 /* Define a altura da área da galeria */
 .projeto-card4 .carousel-inner {
@@ -522,7 +517,6 @@ span {
   height: 100%;
 }
 
-
 .card-body {
   display: flex;
   flex-direction: column;
@@ -531,8 +525,6 @@ span {
   gap: 1rem;
   margin-top: 15px;
 }
-
-
 
 .card-title {
   /* H3 */
@@ -571,6 +563,18 @@ span {
   color: var(--cor-hover);
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(65, 163, 228, 0.6); /* fundo escuro translúcido */
+  border-radius: 50%; /* formato circular */
+  padding: 0.5rem; /* aumenta a área */
+  background-size: 50%; /* reduz o tamanho do ícone */
+  color: red;
+}
+
+.carousel-control-prev-icon svg {
+  fill: #0598ed;
+}
 
 /* Sobre */
 .sobre {
@@ -730,7 +734,6 @@ span {
   text-align: center;
 }
 
-
 .contato .menu-social {
   justify-content: center;
   align-items: center;
@@ -814,7 +817,7 @@ span {
 footer p {
   font-size: 0.85rem;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem 6rem;
 }
 
 footer i {
@@ -860,6 +863,9 @@ footer i {
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
+  .carousel-inner {
+    margin-top: -2rem;
+  }
 
   /* Até 768px */
   #home {
@@ -878,27 +884,25 @@ footer i {
   .contato-formulario h2 {
     text-align: center;
   }
+
+  footer p {
+    padding: 0rem 6rem;
+  }
 }
 
 @media (min-width: 768px) {
-
   /* A partir de 768px ate o infinito */
   #header {
     padding: 1rem 6rem;
   }
 
-  .carousel-inner {
-    margin-top: -1.5rem;
-  }
-
   .menu-desktop {
     display: flex;
     /* FLEXBOX */
-    min-width: 30%;
   }
 
-  .header-toggle {
-    min-width: 30%;
+  .carousel-inner {
+    margin-top: -4.2rem;
   }
 
   .btn-menu-mobile {
@@ -942,7 +946,6 @@ footer i {
 
 /* 992 PX */
 @media (min-width: 992px) {
-
   .carousel-inner {
     margin-top: -5rem;
   }
@@ -951,7 +954,6 @@ footer i {
   .projeto-card4 {
     flex-direction: row;
   }
-
 
   .projeto-card4 .carousel {
     width: 55%;
@@ -966,7 +968,6 @@ footer i {
     /* Espelho */
     /* justify-content: space-between; */
   }
-
 
   .sobre {
     gap: 5rem;
@@ -988,9 +989,8 @@ footer i {
 }
 
 @media (min-width: 1200px) {
-
   .carousel-inner {
-    margin-top: -1.5rem;
+    margin-top: -2.2rem;
   }
 
   #home {
