@@ -174,9 +174,7 @@ span {
 .menu {
   display: flex;
   gap: 1rem;
-  align-items: center;
-  justify-content: center;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .menu-texto {
@@ -256,7 +254,7 @@ span {
   display: flex;
   flex-direction: column;
   /* voltar */
-  padding-top: 4rem;
+  padding-top: 5.5rem;
   border-left: 1px solid var(--cor-borda);
   height: 100vh;
   /* VH = viewport  height  */
@@ -272,6 +270,10 @@ span {
   width: 100%;
   text-align: center;
   padding-top: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-mobile .menu-link {
@@ -894,11 +896,19 @@ footer i {
   /* A partir de 768px ate o infinito */
   #header {
     padding: 1rem 6rem;
+    justify-content: flex-start;
+    gap: 2rem;
   }
 
   .menu-desktop {
     display: flex;
-    /* FLEXBOX */
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header-logo {
+    margin-right: auto;
   }
 
   .carousel-inner {
@@ -1000,6 +1010,12 @@ footer i {
   h2 {
     font-size: 4rem;
   }
+
+  .sobre-content1,
+  .sobre-content2 {
+    display: grid;
+    grid-template-columns: 34% 60%;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1025,5 +1041,10 @@ footer i {
   .conhecimento h2 {
     font-size: 4.5rem;
     text-align: start;
+  }
+  .sobre-content1,
+  .sobre-content2 {
+    display: grid;
+    grid-template-columns: 34% 74%;
   }
 }
