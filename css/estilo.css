@@ -167,6 +167,7 @@ span {
 
 .menu-desktop {
   display: none;
+  margin-left: -2rem;
 }
 
 .menu {
@@ -357,7 +358,15 @@ span {
 }
 
 .menu-social {
+  display: flex;
   gap: 1.2rem;
+  justify-content: flex-start;
+  /* garante alinhamento à esquerda */
+  align-items: center;
+  margin-left: 0;
+  /* remove possíveis recuos */
+  padding-left: 0;
+  /* remove padding padrão */
 }
 
 .btn {
@@ -541,7 +550,10 @@ span {
 
 .card-lista {
   /* UL */
-  margin-left: -30px;
+  margin-left: 0;
+  /* remove possíveis recuos */
+  padding-left: 0;
+  /* remove padding padrão */
   font-family: var(--fonte-menu);
 }
 
@@ -875,11 +887,14 @@ footer i {
     padding: 1rem 6rem;
   }
 
+  .carousel-inner {
+    margin-top: -1.5rem;
+  }
+
   .menu-desktop {
     display: flex;
     /* FLEXBOX */
     min-width: 30%;
-    margin-left: -2rem;
   }
 
   .header-toggle {
@@ -928,6 +943,10 @@ footer i {
 /* 992 PX */
 @media (min-width: 992px) {
 
+  .carousel-inner {
+    margin-top: -5rem;
+  }
+
   .projeto-card,
   .projeto-card4 {
     flex-direction: row;
@@ -969,6 +988,11 @@ footer i {
 }
 
 @media (min-width: 1200px) {
+
+  .carousel-inner {
+    margin-top: -1.5rem;
+  }
+
   #home {
     padding: 6rem 6rem 2rem;
   }
